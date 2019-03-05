@@ -1,4 +1,5 @@
-source ~/zsh-config/zshrc
+source ${0:a:h}/zshrc
+DEFAULT_USER=$USER
 antigen apply
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

@@ -7,11 +7,10 @@ zsh-config
 
 ## Installation
 ```bash
-cd ~
 git clone https://github.com/eronana/zsh-config.git
 
-# cp ~/zsh-config/zshrc.macos ~/.zshrc
-cp ~/zsh-config/zshrc.linux ~/.zshrc
+# echo "source $(pwd)/zsh-config/zshrc.linux" > ~/.zshrc
+echo "source $(pwd)/zsh-config/zshrc.macos" > ~/.zshrc
 
 chsh -s $(which zsh)
 ```
