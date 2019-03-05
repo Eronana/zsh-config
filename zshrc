@@ -1,7 +1,6 @@
 export ZSH_CONFIG_PATH=${0:a:h}
 source $ZSH_CONFIG_PATH/antigen.zsh
 
-ZSH_THEME="agnoster"
 antigen use oh-my-zsh
 
 antigen bundle git
@@ -13,6 +12,8 @@ antigen bundle npm
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
+
+antigen theme agnoster
 
 antigen apply
 
