@@ -1,4 +1,3 @@
 source ${0:a:h}/zshrc
-antigen apply
 
 . /usr/share/autojump/autojump.sh
