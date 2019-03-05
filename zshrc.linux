@@ -1,0 +1,5 @@
+source ~/zsh-config/zshrc
+antigen apply
+
+. /usr/share/autojump/autojump.sh
+
