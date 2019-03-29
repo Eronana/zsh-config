@@ -13,7 +13,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 
-antigen theme agnoster
+antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen apply
 
