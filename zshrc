@@ -17,6 +17,15 @@ antigen theme bhilburn/powerlevel9k powerlevel9k
 
 antigen apply
 
+DEFAULT_USER=$USER
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_time time)
+POWERLEVEL9K_EXECUTION_TIME_ICON=s
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0.1
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND=245
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND=black
+
 unset zle_bracketed_paste
 
 alias rssh="ssh -l root"
