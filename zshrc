@@ -37,7 +37,7 @@ alias unixtime="date +%s"
 alias nr="npm run"
 alias cni="cnpm i"
 alias nrw="npm run watch"
-alias reload="source ~/.zshrc"
+alias reload="antigen reset && source ~/.zshrc"
 alias update-zsh-config='pushd $ZSH_CONFIG_PATH && git fetch && [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ] && git merge && reload && popd -q'
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
