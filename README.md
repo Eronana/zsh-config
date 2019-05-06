@@ -9,8 +9,8 @@ zsh-config
 ```bash
 git clone https://github.com/eronana/zsh-config.git
 
-# echo "source $(pwd)/zsh-config/zshrc.linux" > ~/.zshrc
-echo "source $(pwd)/zsh-config/zshrc.macos" > ~/.zshrc
+# echo "source $(pwd)/zsh-config/zshrc.linux" >> ~/.zshrc
+echo "source $(pwd)/zsh-config/zshrc.macos" >> ~/.zshrc
 
 chsh -s $(which zsh)
 ```
