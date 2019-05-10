@@ -44,4 +44,4 @@ alias update-zsh-config='pushd $ZSH_CONFIG_PATH && git fetch && [ $(git rev-pars
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
-alias sui="sudo -i"
+alias sui="sudo -i --preserve-env=SSH_CONNECTION"
