@@ -56,21 +56,24 @@ function zc {
 }
 
 function zc_update {
-  local exitCode=0
-  pushd -q $ZSH_CONFIG_PATH
-  git fetch
-  if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
-    git merge
-    reload
-    exitCode=$?
+  local exitCode=1
+  if [ -w $ZSH_CONFIG_PATH ]; then
+    pushd -q $ZSH_CONFIG_PATH
+    git fetch
+    if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
+      git merge
+      reload
+      exitCode=$?
+    else
+      exitCode=0
+    fi
+    popd -q
   fi
-  popd -q
   return $exitCode
 }
 
 function is_function {
   type $1 | head -1 | egrep "^$1.*function" >/dev/null 2>&1
 }
-
 
 (zc_update >/dev/null 2>&1 &)
