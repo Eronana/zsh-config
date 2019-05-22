@@ -61,8 +61,7 @@ function zc_update {
     pushd -q $ZSH_CONFIG_PATH
     git fetch
     if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
-      git merge
-      reload
+      git merge && reload
       exitCode=$?
     else
       exitCode=0
