@@ -4,7 +4,6 @@ source $ZSH_CONFIG_PATH/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
-antigen bundle brew
 antigen bundle pip
 antigen bundle node
 antigen bundle npm
