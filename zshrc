@@ -37,11 +37,11 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org"
 alias unixtime="date +%s"
 
 alias nr="npm run"
-alias cni="cnpm i"
+alias ni="npm i"
 alias nrw="npm run watch"
 alias reload="antigen reset && source ~/.zshrc"
 
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 alias sui="sudo -i --preserve-env=SSH_CONNECTION"
 
